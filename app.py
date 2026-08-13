@@ -26,13 +26,13 @@ def crear_tablas():
 
 crear_tablas()
 
-st.title("🚀 Aplicación con CRUD Completo")
+st.title(" Aplicación con CRUD Completo")
 menu = ["Proyectos", "Tareas", "Vista General"]
 choice = st.sidebar.selectbox("Menú de Navegación", menu)
 
 # --- ENTIDAD 1: PROYECTOS ---
 if choice == "Proyectos":
-    st.header("📂 Gestión de Proyectos")
+    st.header(" Gestión de Proyectos")
     
     # CREATE
     with st.form("form_proyecto", clear_on_submit=True):
@@ -84,7 +84,7 @@ if choice == "Proyectos":
 
 # --- ENTIDAD 2: TAREAS ---
 elif choice == "Tareas":
-    st.header("📝 Gestión de Tareas")
+    st.header(" Gestión de Tareas")
     c.execute("SELECT id, nombre FROM proyectos")
     proyectos_disponibles = c.fetchall()
 
